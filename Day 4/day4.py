@@ -16,7 +16,6 @@ MXMXAXMASX'''.split('\n')]
 
 # part 1
 from collections import defaultdict
-from functools import reduce
 
 def groups(data, func):
     grouping = defaultdict(list)
