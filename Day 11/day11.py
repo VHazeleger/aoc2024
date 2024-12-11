@@ -36,10 +36,8 @@ part_1 = plutonian_stones(input, 25)
 part_2 = plutonian_stones(input, 75)
 
 ### OLD CODE
-from functools import cache
 from collections import defaultdict
 
-@cache
 def apply_rules(stone):
     if stone == 0:
         return([1])
@@ -48,7 +46,6 @@ def apply_rules(stone):
     else:
         return([stone*2024])
     
-@cache
 def blink(stone, n_times):
     stones = {stone: 1}
     for i in range(0, n_times):
